@@ -10,6 +10,10 @@ with open("ncino_faq.json", "r") as f:
 if "history" not in st.session_state:
     st.session_state.history = []
 
+# Initialize a variable to track question to add
+if "new_question" not in st.session_state:
+    st.session_state.new_question = None
+
 # Helper function: get best match
 def get_answer(user_question):
     questions = [item["question"] for item in faq_data]
@@ -29,13 +33,26 @@ st.write("Ask me how to navigate the nCino Loan Origination System UI.")
 # Suggested Questions Panel
 st.subheader("💡 Suggested Questions")
 cols = st.columns(2)
+
 for i, item in enumerate(faq_data[:10]):  # show first 10 suggestions
     col = cols[i % 2]
     if col.button(item["question"]):
-        answer = get_answer(item["question"])
-        st.session_state.history.append({"user": True, "message": item["question"]})
-        st.session_state.history.append({"user": False, "message": answer})
-        st.experimental_rerun()
+        # Instead of rerun here, just store the question in session state
+        st.session_state.new_question = item["question"]
+
+# Input box
+user_input = st.text_input("Or type your question here:")
+
+# Determine which question to process
+if st.session_state.new_question:
+    user_input = st.session_state.new_question
+    st.session_state.new_question = None  # reset
+
+# Process the question
+if user_input:
+    answer = get_answer(user_input)
+    st.session_state.history.append({"user": True, "message": user_input})
+    st.session_state.history.append({"user": False, "message": answer})
 
 # Display conversation history
 st.subheader("💬 Conversation")
@@ -44,12 +61,3 @@ for chat in st.session_state.history:
         st.markdown(f"**You:** {chat['message']}")
     else:
         st.markdown(f"**Bot:** {chat['message']}")
-
-# Input box
-user_input = st.text_input("Or type your question here:")
-
-if user_input:
-    answer = get_answer(user_input)
-    st.session_state.history.append({"user": True, "message": user_input})
-    st.session_state.history.append({"user": False, "message": answer})
-    st.experimental_rerun()
