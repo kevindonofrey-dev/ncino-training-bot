@@ -60,8 +60,8 @@ filtered_faqs = [
 st.subheader("💡 Suggested Questions")
 for i, item in enumerate(filtered_faqs[:20]):  # show up to 20 suggestions
     question_text = item["question"]
-    # Clickable button
-    if st.button(label=question_text, key=f"suggest_{i}", help=item["answer"]):
+    # Clickable button without hover tooltip
+    if st.button(label=question_text, key=f"suggest_{i}"):
         st.session_state.new_question = question_text
     # Highlight matches below button (optional)
     if search_query:
