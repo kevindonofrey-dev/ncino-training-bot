@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Where do I find loan attachments?",
+    "answer": "In the nCino UI, use the left navigation menu within the loan file to access 'Attachments.' You can also find them in the Related Lists section for quick access."
+  },
+  {
+    "question": "How do I move through the loan origination process in nCino?",
+    "answer": "Use the left navigation panel to move through each step of the loan process (e.g., Application, Underwriting, Closing). The sub-navigation bar changes based on which step you are currently in."
+  },
+  {
+    "question": "Where do I check borrower details?",
+    "answer": "Borrower details are available in the loan file’s header and borrower information tab. Use the top section of the UI to quickly review names, contact information, and account details."
+  },
+  {
+    "question": "How do I upload documents for a loan?",
+    "answer": "Navigate to the 'Documents' section under the loan file, then use the Upload button to attach files. Drag-and-drop functionality may also be enabled for your environment."
+  },
+  {
+    "question": "How do I track tasks assigned to me?",
+    "answer": "Tasks appear in the loan file under Related Lists and also in your personal Dashboard. The Dashboard provides a summary view of all open tasks across loans."
+  },
+  {
+    "question": "What slows down nCino UI and how can I avoid it?",
+    "answer": "Common slowdowns include too many validation rules or excessive conditional rendering of fields. To improve performance, simplify validation logic, reduce unnecessary conditional visibility, and ensure you are using the latest NC Routes with Lightning Web Components."
+  },
+  {
+    "question": "Where can I see the loan stage or current status?",
+    "answer": "The loan stage is displayed in the progress tracker at the top of the loan file. Each stage (Application, Underwriting, Approval, Closing, etc.) is visually represented so you can quickly see where the loan stands."
+  },
+  {
+    "question": "How do I submit a loan for underwriting?",
+    "answer": "Complete all required fields in the Application step, then select the 'Submit for Underwriting' button from the loan file header. If fields are incomplete, you’ll see error messages guiding you to what needs updating."
+  },
+  {
+    "question": "How do I access related records like collateral or guarantors?",
+    "answer": "In the loan file, scroll to the Related Lists section. Here you’ll see quick links to related records such as Collateral, Guarantors, Financial Spreads, and more."
+  },
+  {
+    "question": "How do I personalize my dashboard?",
+    "answer": "Go to your Dashboard and use the 'Customize' or 'Edit' option (depending on your system’s setup). You can rearrange widgets, add or remove task views, and adjust filters to focus on loans or tasks most relevant to you."
+  }
+]
