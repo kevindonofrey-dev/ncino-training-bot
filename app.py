@@ -38,6 +38,10 @@ st.set_page_config(page_title="nCino Training Bot", page_icon="🤖", layout="ce
 st.title("🤖 nCino Training Bot")
 st.write("Ask me how to navigate the nCino Loan Origination System UI.")
 
+# Clear Chat History Button
+if st.button("🗑️ Clear Chat History"):
+    st.session_state.history = []
+
 # Select category
 categories = sorted(list(set(item.get("category", "General") for item in faq_data)))
 selected_category = st.radio("Select FAQ Category:", categories)
