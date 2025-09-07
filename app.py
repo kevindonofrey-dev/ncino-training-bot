@@ -3,7 +3,7 @@ import json
 import difflib
 
 # Load FAQ data
-with open("ncino_faq.json", "r") as f:
+with open("nCino FAQ.json", "r") as f:
     faq_data = json.load(f)
 
 # Helper function: find best match
