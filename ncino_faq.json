@@ -1,42 +1,102 @@
 [
   {
     "question": "Where do I find loan attachments?",
-    "answer": "In the nCino UI, use the left navigation menu within the loan file to access 'Attachments.' You can also find them in the Related Lists section for quick access."
-  },
-  {
-    "question": "How do I move through the loan origination process in nCino?",
-    "answer": "Use the left navigation panel to move through each step of the loan process (e.g., Application, Underwriting, Closing). The sub-navigation bar changes based on which step you are currently in."
-  },
-  {
-    "question": "Where do I check borrower details?",
-    "answer": "Borrower details are available in the loan file’s header and borrower information tab. Use the top section of the UI to quickly review names, contact information, and account details."
-  },
-  {
-    "question": "How do I upload documents for a loan?",
-    "answer": "Navigate to the 'Documents' section under the loan file, then use the Upload button to attach files. Drag-and-drop functionality may also be enabled for your environment."
-  },
-  {
-    "question": "How do I track tasks assigned to me?",
-    "answer": "Tasks appear in the loan file under Related Lists and also in your personal Dashboard. The Dashboard provides a summary view of all open tasks across loans."
-  },
-  {
-    "question": "What slows down nCino UI and how can I avoid it?",
-    "answer": "Common slowdowns include too many validation rules or excessive conditional rendering of fields. To improve performance, simplify validation logic, reduce unnecessary conditional visibility, and ensure you are using the latest NC Routes with Lightning Web Components."
-  },
-  {
-    "question": "Where can I see the loan stage or current status?",
-    "answer": "The loan stage is displayed in the progress tracker at the top of the loan file. Each stage (Application, Underwriting, Approval, Closing, etc.) is visually represented so you can quickly see where the loan stands."
+    "answer": "In the nCino UI, use the left navigation menu within the loan file to access 'Attachments.'",
+    "category": "Application"
   },
   {
     "question": "How do I submit a loan for underwriting?",
-    "answer": "Complete all required fields in the Application step, then select the 'Submit for Underwriting' button from the loan file header. If fields are incomplete, you’ll see error messages guiding you to what needs updating."
+    "answer": "Click 'Submit for Underwriting' at the top of the loan page after completing all required fields.",
+    "category": "Underwriting"
   },
   {
-    "question": "How do I access related records like collateral or guarantors?",
-    "answer": "In the loan file, scroll to the Related Lists section. Here you’ll see quick links to related records such as Collateral, Guarantors, Financial Spreads, and more."
+    "question": "What is the process to close a loan?",
+    "answer": "After underwriting approval, move to the 'Closing' tab and follow the steps to complete documentation and funding.",
+    "category": "Closing"
   },
   {
-    "question": "How do I personalize my dashboard?",
-    "answer": "Go to your Dashboard and use the 'Customize' or 'Edit' option (depending on your system’s setup). You can rearrange widgets, add or remove task views, and adjust filters to focus on loans or tasks most relevant to you."
+    "question": "How can I track loan status?",
+    "answer": "Use the 'Loan Dashboard' in the main menu to view current status, tasks, and pending items.",
+    "category": "General"
+  },
+  {
+    "question": "How do I add a co-borrower?",
+    "answer": "Open the loan file, go to 'Borrowers,' click 'Add Borrower,' and enter the co-borrower’s details.",
+    "category": "Application"
+  },
+  {
+    "question": "What documents are required for underwriting?",
+    "answer": "Check the checklist under 'Underwriting Requirements' in the loan file for all mandatory documents.",
+    "category": "Underwriting"
+  },
+  {
+    "question": "How do I generate a closing disclosure?",
+    "answer": "Go to the 'Closing' tab, select 'Generate Closing Disclosure,' review, and save.",
+    "category": "Closing"
+  },
+  {
+    "question": "How do I edit borrower information?",
+    "answer": "In the loan file, navigate to 'Borrowers,' select the borrower, and click 'Edit' to update details.",
+    "category": "Application"
+  },
+  {
+    "question": "Can I reassign a loan to another officer?",
+    "answer": "Yes, click 'Loan Actions' → 'Reassign Loan,' then select the new loan officer from the dropdown.",
+    "category": "General"
+  },
+  {
+    "question": "How do I add conditions for underwriting?",
+    "answer": "Go to the 'Underwriting' tab, click 'Add Condition,' enter the details, and save.",
+    "category": "Underwriting"
+  },
+  {
+    "question": "How do I schedule a closing appointment?",
+    "answer": "Navigate to the 'Closing' tab, click 'Schedule Closing,' choose a date/time, and send invitations to relevant parties.",
+    "category": "Closing"
+  },
+  {
+    "question": "How do I mark a document as reviewed?",
+    "answer": "Open the document within the loan file, click 'Mark as Reviewed,' and confirm.",
+    "category": "Application"
+  },
+  {
+    "question": "Can I attach multiple files at once?",
+    "answer": "Yes, in the 'Attachments' section, click 'Upload Files' and select multiple documents from your computer.",
+    "category": "Application"
+  },
+  {
+    "question": "How do I view pending tasks?",
+    "answer": "Use the 'Task List' in the main dashboard or within the loan file under 'Tasks.'",
+    "category": "General"
+  },
+  {
+    "question": "How do I approve a loan in underwriting?",
+    "answer": "In the 'Underwriting' tab, review all conditions, then click 'Approve Loan' at the top.",
+    "category": "Underwriting"
+  },
+  {
+    "question": "How do I generate a funding package?",
+    "answer": "Go to the 'Closing' tab, select 'Generate Funding Package,' review, and submit to operations.",
+    "category": "Closing"
+  },
+  {
+    "question": "How can I search for a loan by number?",
+    "answer": "Use the search bar at the top of the main dashboard and enter the loan number.",
+    "category": "General"
+  },
+  {
+    "question": "How do I delete an incorrect attachment?",
+    "answer": "In the 'Attachments' section, click the trash can icon next to the file and confirm deletion.",
+    "category": "Application"
+  },
+  {
+    "question": "What should I do if a loan is missing documents?",
+    "answer": "Add a note in the 'Tasks' tab and alert underwriting to request missing documents.",
+    "category": "Underwriting"
+  },
+  {
+    "question": "How do I finalize the closing package?",
+    "answer": "After reviewing all documents, click 'Finalize Closing Package' and confirm submission to funding.",
+    "category": "Closing"
   }
 ]
